@@ -1,7 +1,7 @@
 ---
 categories:
 - Lifestyle
-tags:
+cast:
 - Love
 - Friendship
 title: How Not to Talk With a Girl
