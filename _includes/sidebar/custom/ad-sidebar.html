@@ -1,0 +1,19 @@
+<div class="sidebar-section">
+  <h3><span>Ads</span></h3>
+  {%- if site.adsense -%}
+  <!-- github_resp_sidebar -->
+  <amp-ad width="100vw" height="292"
+    type="adsense"
+    data-ad-client="{{ site.adsense.client_id }}"
+    data-ad-slot="{{ site.adsense.ad_slot.sidebar }}"
+    data-auto-format="rspv"
+    {%- unless jekyll.environment == 'production' -%}
+    data-adtest="on"
+    {%- endunless -%}
+    data-full-width>
+    <div overflow></div>
+    <div placeholder>Loading ...</div>
+    <div fallback>No ad for you</div>
+  </amp-ad>
+  {%- endif -%}
+</div>

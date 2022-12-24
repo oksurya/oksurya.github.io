@@ -1,0 +1,37 @@
+<!-- begin post -->
+{%- assign author = site.data.authors[page.author] -%}
+{%- unless author -%}
+{%- assign author = site.authors[page.author] -%}
+{%- endunless -%}
+
+<div class="card card-list">
+  <div class="row">
+    <div class="col-md-5 wrapthumbnail">
+      <a href="{{ post.url | relative_url }}">
+        <div class="thumbnail{% if post.image.fit %} fit-{{post.image.fit}} {% endif %}">
+          {%- if post.image.path -%}
+          {%- include picture.html img=post.image.path source="raw" width="112" height="150" layout="intrinsic" lightbox=false suffix="thumb." -%}
+          {%- else -%}
+          {%- include picture.html img="write-2160925.svg" source="assets" width="112" height="150" layout="intrinsic" lightbox=false -%}
+          {%- endif -%}
+        </div>
+      </a>
+    </div>
+    <div class="wrapmeta">
+      <div class="card-block pt-3">
+        <h4 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title | truncate: 68 }}</a></h4>
+        <div class="metafooter">
+          <div class="wrapfooter">
+            <span class="post-read-more"><a href="{{ post.url | relative_url }}" title="Read Story"><i class="fa fa-link"></i></a></span>
+            <div class="post-meta">
+              {% include blocks/post-date.html %}
+              {% include blocks/list-categories.html %}
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end post -->

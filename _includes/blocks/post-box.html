@@ -1,0 +1,58 @@
+<!-- begin post -->
+{%- assign author = site.data.authors[page.author] -%}
+{%- unless author -%}
+{%- assign author = site.authors[page.author] -%}
+{%- endunless -%}
+
+<div class="col-md-6 grid-item">
+  <article class="card">
+    <a href="{{ post.url | relative_url }}" aria-hidden="true" tabindex="-1">
+      {%- assign thumb_alt = post.title | truncate: 15, '...' | prepend: "thumbnail for " -%}
+      {%- if post.image.path -%}
+        {%- if post.image.width -%}
+          {%- assign imgwidth = post.image.width -%}
+        {%- else -%}
+          {%- assign imgwidth =  "730" -%}
+        {%- endif -%}
+        {%- if post.image.height -%}
+          {%- assign imgheight = post.image.height -%}
+        {%- else -%}
+          {%- assign imgheight =  "411" -%}
+        {%- endif -%}
+        {%- include picture.html img=post.image.path source="raw" width=imgwidth height=imgheight layout="intrinsic" alt=thumb_alt lightbox=false -%}
+      {%- else -%}
+        {%- include picture.html img="write-2160925.svg" source="assets" width="auto" height="197" layout="fixed-height" alt=thumb_alt lightbox=false -%}
+      {%- endif -%}
+    </a>
+
+    <!--
+      Template Name:Affiliates
+      Copyright:WowThemes.net,https://www.wowthemes.net
+      Version:1.0.2
+      License: https://www.wowthemes.net/freebies-license/
+    -->
+
+    <div class="card-block">
+      <h3 class="card-title"><a href="{{ post.url | relative_url }}" rel="bookmark">{{ post.title }}</a></h3>
+      <p class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</p>
+      <div class="metafooter">
+        <div class="wrapfooter">
+          <!-- Post Tags -->
+          <div class="after-post-tags">
+            {% include blocks/list-tags.html %}
+          </div>
+          <!-- End Tags -->
+          {% include blocks/post-date.html %}
+          <span class="post-read-more"><a href="{{ post.url | relative_url }}" title="Read Story"><i class="fa fa-link"></i></a></span>
+          {% if page.url == "/blog/" or page.url contains "/blog/page"%}
+          <div class="post-meta">
+            {% include blocks/list-categories.html %}
+          </div>
+          {%- endif -%}
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+<!-- end post -->

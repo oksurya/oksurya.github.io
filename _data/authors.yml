@@ -1,17 +1,26 @@
-## Template › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md#setting-author-url
-# -------------------------------------
-# {author_id}:
-#   name: {full name}
-#   twitter: {twitter_of_author}
-#   url: {homepage_of_author}
-# -------------------------------------
+John:
+  name: John Washer
+  display_name: John
+  gravatar: 
+  email: 
+  web: 
+  facebook: https://www.facebook.com/
+  description: 
 
-cotes:
-  name: Cotes Chung
-  twitter: cotes2020
-  url: https://github.com/cotes2020/
+Peter:
+  name: Peter Mu
+  display_name: Peter
+  gravatar: 
+  email: 
+  web: 
+  facebook: https://www.facebook.com/
+  description: 
 
-sille_bille:
-  name: Dinesh Prasanth Moluguwan Krishnamoorthy
-  twitter: dinesh_MKD
-  url: https://github.com/SilleBille/
+chris:
+  name: Chris KY Fung
+  display_name: Chris F.
+  gravatar: abd876486b2caa54b43bf64a5a86f620
+  email: 
+  web: https://en.gravatar.com/chrisfungky
+  facebook: https://www.facebook.com/chriskyfung/
+  description: "Author of this blog, M.Phil."

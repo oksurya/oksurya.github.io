@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://jayasurya.co.in/sitemap.xml
