@@ -16,9 +16,19 @@
 
       <div class="footer-right">
         <p class="mb-0">
-          <a href="/privacy-policy">Privacy Policy</a> - 
-          <a href="/terms-and-conditions">Terms</a> - 
-          <a href="/contact-us">Contact</a>
+
+          {% capture _platform %}
+          <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+          {% endcapture %}
+
+          {% capture _theme %}
+          <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
+          {% endcapture %}
+
+          {{ site.data.locales[site.lang].meta
+            | default: 'Powered by :PLATFORM with :THEME theme.'
+            | replace: ':PLATFORM', _platform | replace: ':THEME', _theme
+          }}
         </p>
       </div>
     </div>
