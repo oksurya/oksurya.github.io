@@ -23,12 +23,6 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
   gem "jekyll-github-metadata"
-  gem "jekyll-archives", git: "https://github.com/oksurya/jekyll-custom-archive"
-end
-
-
-group :jekyll_plugins do
-  
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
