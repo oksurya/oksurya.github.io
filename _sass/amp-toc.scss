@@ -1,8 +1,0 @@
-.screen-reader-only {
-  position: absolute;
-  left: -5000px;
-
-  &:focus {
-    left: 0;
-  }
-}

@@ -1,156 +1,69 @@
-# Site
-name: "AMP Affiliately Jekyll Theme"
-title: "AMP Affiliately Jekyll Theme"
-description: "An AMP-ready Jekyll blog theme"
-url: https://chriskyfung.github.io
-baseurl: '/amp-affiliately-jekyll-theme'
-favicon: 'assets/images/favicon.png'
-logo: 'assets/images/logo-plainSVG.svg'
-permalink: /:year/:month/:day/:title
-paginate: 6
-timezone: 'Asia/Hong_Kong'
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-# Set <USERNAME>/<PROJECT> to display the button to the project
-repository: chriskyfung/amp-affiliately-jekyll-theme
+title: Jayasurya Mailsamy
+email: jayasuryaofficial1@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jayasurya.co.in" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jayasuryatweet
+github_username:  oksurya
 
-# Navigation features
-nav:
-  global:
-    menu: false
-    dropdown: false # Show menu with dropdown submenu
-  local:
-    items:
-      - name: Features
-        url: category/feature/
-      - name: Docs
-        url: category/doc/
-      - name: Samples
-        url: category/sample/
-    menu: true
-    title:
-      limit: 40
-
-# List Sorting
-sort_categories: false
-sort_tags: false
-
-# Content Post-processing
-target_blank: false
-anchor_link: true
-
-# Sidebar Features
-sidebar:
-  featured: true
-  recent_posts: true
-
-# AddThis Inline Share Buttons
-addthis: 
-  pid: ra-5d01c83d522ad580 # Addthis profile id
-  wid: 7kfz # Addthis widget id
-
-# Disqus Comments
-amp_disqus: 
-  shortname: 'chriskyfung' # Disqus shortname
-  url: 'https://chriskyfung.gitlab.io/disqus-amp/' #baseurl of your AMP disqus iframe element
-  height: 580
-
-# Google Custom Search Engine ID
-cse_id: 011006674894885990812:tjln7k0nyjx 
-
-# Analytics
-google_analytics: 'UA-72575541-9' # Google Analytics Tracking ID
-gtm: 'GTM-WQMQK3X' # Google Tag Manager ID
-
-# Google Ads
-adstyle: true
-adsense: 
-  client_id: 'ca-pub-4819282024314540' # Google Adsense client ID
-  auto_ads: true
-  ad_slot:
-    # before_content: 2454411055 # Ad Slot that places before content
-    sidebar: 1391498756 # Ad Slot that places to sidebar
-
-# Soical Buttons
-facebook_id: chriskyfung
-pinterest_id: chriskyfung
-github_id : chriskyfung
-medium_id: chriskyfung
-
-# Buy Me a Coffee
-buymeacoffee: chriskyfung
-
-# Copyright Start Year
-copyright: 
-  owner: Chris KY FUNG
-  link: https://chriskyfung.github.io/
-
-# Plugins
-plugins: 
+# Build settings
+theme: minima
+plugins:
   - jekyll-feed
-  - jekyll-github-metadata
-  - jekyll-paginate
-  - jekyll-redirect-from
-  - jekyll-seo-tag
-  - jekyll-sitemap
 
-# Archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-    - cast
-  layout: archive
-  permalinks: 
-    category: '/category/:name/'
-    tag: '/tag/:name/'
-    cast: '/cast/:name/'
+defaults:
+  - scope:
+      path: ''          # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: true    # Enable comments in posts.
+      toc: true         # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /read/:title/
+      categories: 
+      tags: 
 
-# Other
-markdown: kramdown
-highlighter: rouge
-
-# Directories and/or files from the conversion
-exclude:
-  - frontmatter.json
-  - gulpfile.js
-  - LICENSE
-  - package-lock.json
-  - package.json
-
-############################################################
-# Site configuration for the WebP Generator Plugin
-# The values here represent the defaults if nothing is set
-webp:
-  enabled: false
-  
-  # The quality of the webp conversion 0 to 100 (where 100 is least lossy)
-  quality: 75
-
-  # List of directories containing images to optimize, nested directories will only be checked if `nested` is true
-  # By default the generator will search for a folder called `/img` under the site root and process all jpg, png and tiff image files found there.
-  img_dir: ["/images/", "/assets/images"]
-
-  # Whether to search in nested directories or not
-  nested: true
-
-  # add ".gif" to the format list to generate webp for animated gifs as well
-  formats: [".jpeg", ".jpg", ".png", ".tiff"]
-
-  # File extensions for animated gif files 
-  gifs: [".gif"]
-
-  # Set to true to always regenerate existing webp files
-  regenerate: false
-
-  # Local path to the WebP utilities to use (relative or absolute)
-  # Omit or leave as nil to use the utilities shipped with the gem, override only to use your local install
-  webp_path: nil
-
-  # List of files or directories to excludes
-  # e.g. custom or hand generated webp conversion files
-  exclude: []
-
-  # append '.webp' to filename after original extension rather than replacing it.
-  # Default transforms `image.png` to `image.webp`, while changing to true transforms `image.png` to `image.png.webp`
-  append_ext: false
-############################################################
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

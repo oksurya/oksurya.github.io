@@ -1,7 +1,7 @@
 ---
 categories:
 - Sports
-cast:
+tags:
 - Wasim Akram
 - Shane Warne
 - Sir Viv Richards
