@@ -42,12 +42,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install node dependencies
-        run: npm install
-
-      - name: Optimize AMP ⚡ and Minify HTML 🗜
-        run: |
-          sudo chmod -R 777 ./_site
-          npx gulp build
+        run: npm install --package-lock-only
 
       - name: Deploy to gh-page 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
