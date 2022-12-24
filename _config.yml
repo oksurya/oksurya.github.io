@@ -86,7 +86,6 @@ copyright:
 
 # Plugins
 plugins: 
-  - jekyll-archives
   - jekyll-feed
   - jekyll-github-metadata
   - jekyll-paginate
