@@ -17,12 +17,18 @@ gem "jekyll", "~> 4.2.0"
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem 'jekyll-archives'
   gem 'jekyll-feed'
   gem 'jekyll-paginate'
   gem 'jekyll-redirect-from'
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
   gem "jekyll-github-metadata"
+end
+
+
+group :jekyll_plugins do
+  
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
