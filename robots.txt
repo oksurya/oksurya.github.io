@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /gnews/
 
-Sitemap: https://jayasurya.co.in/news.xml
+Sitemap: https://jayasurya.co.in/sitemap.xml
