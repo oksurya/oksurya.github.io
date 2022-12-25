@@ -180,6 +180,8 @@ compress_html:
   ignore:
     envs: [development]
 
+articleimg: /default.png
+
 exclude:
   - '*.gem'
   - '*.gemspec'
