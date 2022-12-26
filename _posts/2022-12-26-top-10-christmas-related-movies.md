@@ -1,5 +1,8 @@
 ---
-categories: []
+categories:
+- Top Movies
+- Best Movies
+- Christmas Movies
 tags:
 - A Christmas Carol
 - It's a Wonderful Life
