@@ -1,0 +1,12 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign tags = "" | split: "" %}
+{% for t in site.tags %}{% assign tags = tags | push: t[0] %}{% endfor %}{% assign sorted_tags = tags | sort_natural %}
+{% for t in sorted_tags %}
+<url>
+    <loc>{{site.url}}{{ t | slugify | url_encode | prepend: '/hashtag/' | append: '/' | relative_url }}</loc>
+    </url>
+{% endfor %}
+</urlset>
