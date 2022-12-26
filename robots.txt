@@ -1,4 +1,8 @@
+---
+---
+Sitemap: {{site.url}}/sitemap.xml
+Sitemap: {{site.url}}/news.xml
+Sitemap: {{site.url}}/topics.xml
+
 User-agent: *
 Allow: /
-
-Sitemap: https://jayasurya.co.in/sitemap.xml
