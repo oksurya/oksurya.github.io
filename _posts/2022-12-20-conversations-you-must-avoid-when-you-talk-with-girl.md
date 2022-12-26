@@ -1,7 +1,7 @@
 ---
 categories:
 - Lifestyle
-- Relatiionship
+- Relationship
 tags:
 - Love
 - Friendship
