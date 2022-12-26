@@ -95,9 +95,20 @@ tail_includes:
   </div> <!-- .d-flex -->
 
 </div> <!-- .post-meta -->
-
+<style>
+  #mobiletoc {
+    display:none;
+  }
+  @media only screen and (max-width: 500px) {
+    #mobiletoc {
+  display:block;
+    }
+  }
+  </style>
 <div class="post-content">
+  <div id="mobiletoc">
   {% include toc.html %}
+  </div>
   {{ content }}
 </div>
 
