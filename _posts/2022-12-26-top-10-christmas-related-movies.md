@@ -19,8 +19,6 @@ title: Top 10 Christmas Related Movies
 ---
 ## Here are ten popular Christmas-themed movies:
 
-![Christmas Movies List](/uploads/pexels-photo-250177.jpeg "Christmas Movies")
-
 ### It's a Wonderful Life (1946)
 
 "**It's a Wonderful Life**" is a classic Christmas movie that tells the story of George Bailey, a man who has sacrificed his own dreams for the good of his family and community. When he finds himself in financial trouble and contemplates suicide on Christmas Eve, his guardian angel, Clarence, intervenes and shows him what life would be like if he had never been born. The film, released in 1946, stars James Stewart as George Bailey and has become a holiday favorite for many people around the world. It is often praised for its themes of hope, family, and the power of community, and it has been selected for preservation in the United States National Film Registry.
