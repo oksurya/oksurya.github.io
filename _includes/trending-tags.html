@@ -41,8 +41,8 @@
     <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
 
     {% for tag_name in trending_tags %}
-      {% assign url = tag_name | slugify | url_encode | prepend: "/tags/" | append: "/" %}
-      <a class="post-tag" href="{{ url | relative_url }}">{{ tag_name }}</a>
+      {% assign url = tag_name | slugify | url_encode | prepend: "/hashtag/" | append: "/" %}
+      <a class="post-tag" href="{{ url | relative_url }}">#{{ tag_name }}</a>
     {% endfor %}
 
     </div>
