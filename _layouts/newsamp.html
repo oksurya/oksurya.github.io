@@ -811,9 +811,7 @@ color:#000;
             
         </style>
     </noscript>
-    <script type="application/ld+json">
-        {"@context":"http:\/\/schema.org\/","@type":"organization","@id":"#organization","logo":{"@type":"ImageObject","url":"https://buzzy.akbilisim.com/upload/logo.png"},"url":"https://buzzy.akbilisim.com","name":"Buzzy","description":"Buzzy demo site example meta description"}
-    </script>
+
     <script type="application/ld+json">
         {"@context":"http:\/\/schema.org\/","@type":"WebSite","name":"{{site.title}}","alternateName":"Jayasurya Mayilsamy","url":"{{site.url}}"}
     </script>
@@ -848,10 +846,18 @@ color:#000;
     </div>
     <div class="title-bottom">
         <div class="author-container" itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <span class="author-name" itemprop="name">{{page.authors}}</span>
+            {% if authors %}
+        {% for author in authors %}
+          <a href="{{ site.data.authors[author].url }}">{{ site.data.authors[author].name }}</a>
+          {% unless forloop.last %}</em>, <em>{% endunless %}
+        {% endfor %}
+      {% else %}
+      <span class="author-name" itemprop="name">{{ site.social.name }}</span>
+      {% endif %}
+            
         </div>
         <div class="timestamp-container">
-            <time itemprop="datePublished" class="timestamp" datetime="{{ page.date | date_to_xmlschema }}"> /
+            <time itemprop="datePublished" class="timestamp" datetime="{{ page.date | date_to_xmlschema }}"> / {{ page.date | timeago }}
 </time>
             <meta itemprop="dateModified" content="{{ page.date | last_modified_at | date_to_xmlschema }}" />
         </div>
