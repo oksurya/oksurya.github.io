@@ -1,6 +1,6 @@
 ---
 imdb_id: ''
-
+image: "https://buzzy.akbilisim.com/upload/media/posts/2016-11/05/mass-graves-on-the-road-to-mosul-show-the-horrors-that-lie-ahead_1478372385-b.jpg"
 ---
 Here is a possible way to draw a heart using C++:
 

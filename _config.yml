@@ -36,6 +36,10 @@ github:
 twitter:
   username: jayasuryatweet            # change to your twitter username
 
+instagram:
+  username: jayasurya_ig
+facebook:
+  username: oksurya
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
@@ -143,7 +147,7 @@ defaults:
       path: ''          # An empty string here means all files in the project
       type: posts
     values:
-      layout: post
+      layout: newsamp
       comments: true    # Enable comments in posts.
       toc: true         # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
@@ -180,8 +184,6 @@ compress_html:
   ignore:
     envs: [development]
 
-articleimg: /default.png
-
 exclude:
   - '*.gem'
   - '*.gemspec'
@@ -201,3 +203,12 @@ jekyll-archives:
   permalinks:
     tag: /hashtag/:name/
     category: /topic/:name/
+
+toc:
+  min_level: 2 # default: 1
+  max_level: 10 # default: 6
+  ordered_list: true
+
+plugins:
+  - jekyll-toc
+  - jekyll-last-modified-at

@@ -3,6 +3,7 @@ categories:
 - Top Movies
 - Best Movies
 - Christmas Movies
+- Christmas 2022
 tags:
 - A Christmas Carol
 - It's a Wonderful Life
@@ -17,7 +18,7 @@ tags:
 title: Top 10 Christmas Related Movies
 
 ---
-## Here are ten popular Christmas-themed movies:
+**Here are ten popular Christmas-themed movies:**
 
 ### It's a Wonderful Life (1946)
 
