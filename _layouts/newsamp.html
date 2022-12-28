@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title | append: " | "}}{{ site.title }}</title>
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <meta property="og:site_name" content="{{ page.title }}">
     <meta property="og:type" content="article">
