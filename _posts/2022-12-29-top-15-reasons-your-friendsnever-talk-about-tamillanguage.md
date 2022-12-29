@@ -5,8 +5,6 @@ tags:
 - Friends
 - Tamil language
 title: Top 15 Reasons Your Friends never Talk About Tamil language
-image: ''
-
 ---
 Why your friends may or may not talk about the Tamil language. There could be many reasons why a person might not discuss a particular language or topic with their friends, and it's important to respect people's choices and interests.
 
