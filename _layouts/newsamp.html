@@ -869,6 +869,8 @@ color:#000;
             height="410" layout="responsive"></amp-img>
             <meta itemprop="url" content="{{ site.url }}{{ page.image | default: site.articleimg }}" />
             {% else %}
+       <amp-img src="https://via.placeholder.com/500x300/000000/FFFFFF/?text={{ page.title }}" alt="{{ page.title }}" width="728"
+            height="410" layout="responsive"></amp-img>
             <meta itemprop="url" content="https://via.placeholder.com/500x300/000000/FFFFFF/?text={{ page.title }}" />
 
 {% endif %}
