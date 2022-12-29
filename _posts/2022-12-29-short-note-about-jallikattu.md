@@ -6,8 +6,6 @@ tags:
 - Tamil Nadu
 - Tamil
 title: Short Note About Jallikattu
-image: ''
-
 ---
 Jallikattu is a traditional sport that is practiced in Tamil Nadu, India. It involves releasing a bull into a large arena, and participants attempt to grab and hold onto the bull's hump for a certain distance or duration. The sport is considered a part of Tamil culture and has a long history dating back to ancient times.
 
