@@ -80,10 +80,7 @@ tail_includes:
   </style>
 <div class="post-content">
     {% if page.image %}
-    <div class="mt-3 mb-3">
-      <img src="{{ page.image }}"
-        alt="{{ page.image.alt | default: "Preview Image" }}" />
-    </div>
+  <img src="{{site.url}}{{ page.image }}" alt="" />
   {% endif %}
 
   <div id="mobiletoc">
