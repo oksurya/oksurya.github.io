@@ -7,7 +7,7 @@ tags:
 - Blogging Course
 - Blogger Free Class
 image: "/uploads/default.png"
-title: How do start a blogging?
+title: How to start a blogging?
 
 ---
 Starting a blog can be a fun and rewarding way to share your thoughts, ideas, and experiences with a wider audience. If you're interested in starting a blog, here are some steps you can follow:
