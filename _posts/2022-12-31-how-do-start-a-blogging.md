@@ -12,7 +12,7 @@ title: How do start a blogging?
 ---
 Starting a blog can be a fun and rewarding way to share your thoughts, ideas, and experiences with a wider audience. If you're interested in starting a blog, here are some steps you can follow:
 
-**Choose a blogging platform:** There are many different blogging platforms available, such as Blogger, WordPress, and Squarespace. Choose a platform that is easy to use and meets your needs.
+[**Choose a blogging platform**](/read/how-to-choose-a-blogging-platform/)**:** There are many different blogging platforms available, such as Blogger, WordPress, and Squarespace. Choose a platform that is easy to use and meets your needs.
 
 **Choose a domain name and hosting provider:** Your domain name is the URL of your blog, and your hosting provider is the company that stores your blog's files and makes them available to the public. Choose a domain name that is easy to remember and reflects the content of your blog, and choose a hosting provider that offers good uptime and customer support.
 
